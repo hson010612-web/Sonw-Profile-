@@ -31,7 +31,7 @@ Một trang cá nhân phong cách **Retro/OS** được xây dựng bằng HTML,
 
 ## 🌐 Preview
 Bạn có thể xem trực tiếp trang web tại đây:
-👉 **[Link GitHub Pages của bạn]** *(Hãy dán link trang web của bạn vào dòng trên nhé!)*
+https://hson010612-web.github.io/Sonw-Profile-/
 
 ---
 

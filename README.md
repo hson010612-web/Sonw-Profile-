@@ -2,7 +2,7 @@
 
 ### 🎮 Welcome to my corner of the internet!
 
-Một trang cá nhân phong cách **Retro/OS** được xây dựng bằng HTML, CSS và Tailwind. Nhân vật đại diện chính là "huyền thoại" **Neco-Arc**.
+Một trang cá nhân phong cách **Retro/OS** được xây dựng bằng HTML, CSS và Tailwind
 
 ---
 

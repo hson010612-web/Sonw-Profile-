@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>sonw0106 | Profile</title>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&family=Roboto+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        :root { --bg: #e6e6e6; --card: #f2f2f2; --text: #111827; --border: #111827; --gray: #6b7280; --grid: #cfd2d6; }
+        body {
+            font-family: "Roboto Mono", monospace;
+            background-color: var(--bg);
+            background-image: linear-gradient(var(--grid) 1px, transparent 1px), linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+            background-size: 16px 16px;
+            margin: 0; padding: 10px; display: flex; justify-content: center; min-height: 100vh;
+        }
+        .os-window { background: var(--card); border: 4px solid var(--border); box-shadow: 6px 6px 0 var(--gray); width: 100%; max-width: 850px; padding: 20px; margin-top: 10px; }
+        .avatar-frame { width: 150px; height: 150px; border: 4px solid var(--border); box-shadow: 4px 4px 0 var(--gray); overflow: hidden; background: #fff; display: flex; align-items: center; justify-content: center; }
+        
+        /* Tối ưu hiển thị ảnh */
+        .avatar-img { 
+            width: 100%; 
+            height: 100%; 
+            object-fit: cover;
+            image-rendering: auto; /* Giúp ảnh mượt hơn */
+        }
+
+        .name-box { font-family: "VT323", monospace; font-size: 32px; background: #e0e0e0; border: 3px solid var(--border); box-shadow: 4px 4px 0 var(--gray); padding: 8px 15px; text-align: center; width: 100%; }
+        .pixel-card { background: var(--card); border: 2px solid var(--border); box-shadow: 3px 3px 0 var(--gray); padding: 15px; }
+        .skill-bar { height: 12px; border: 2px solid var(--border); background: #e0e0e0; margin-top: 5px; }
+        .skill-fill { height: 100%; background: var(--border); }
+        .negative-fill { background: #ef4444; width: 100% !important; }
+        .exe-title { font-family: "VT323", monospace; font-size: 20px; }
+        .tag { font-family: "VT323", monospace; font-size: 18px; padding: 4px 12px; background: #fff; border: 2px solid var(--border); box-shadow: 2px 2px 0 var(--gray); }
+        
+        @media (min-width: 768px) { .main-layout { display: grid; grid-template-columns: 280px 1fr; gap: 20px; } }
+    </style>
+</head>
+<body>
+    <audio id="bgm" src="123.mp3" preload="auto" loop></audio>
+    <div class="os-window">
+        <div class="flex justify-end mb-6 border-b-2 border-black pb-2">
+            <span id="clock" class="exe-title text-gray-600">00:00:00</span>
+        </div>
+        <div class="main-layout">
+            <div class="flex flex-col items-center gap-4">
+                <div class="avatar-frame">
+                    <img src="https://i.pinimg.com/736x/05/b5/0c/05b50ccb3219f7ea00ec3d2c8d4b2d1f.jpg" 
+                         alt="Neco-Arc" 
+                         class="avatar-img"
+                         onerror="this.parentElement.innerHTML='<span class=\'text-6xl font-bold\'>S</span>'">
+                </div>
+                <div class="name-box uppercase">sonw0106</div>
+                <div class="pixel-card w-full">
+                    <h2 class="exe-title mb-2 text-red-600 font-bold uppercase">Stats</h2>
+                    <ul class="text-sm space-y-2 font-bold uppercase">
+                        <li>Tuổi: 13</li>
+                        <li>Ngày sinh: 01/06/2012</li>
+                        <li>Trạng thái: Online</li>
+                        <li>Khu vực: Việt Nam</li>
+                    </ul>
+                </div>
+                <a href="https://discord.gg/QBWW7Jms6F" target="_blank" class="pixel-card w-full text-center bg-[#5865F2] text-white font-bold uppercase py-2 hover:brightness-110 transition-all">Discord</a>
+            </div>
+
+            <div class="flex flex-col gap-5">
+                <div class="pixel-card">
+                    <h2 class="exe-title mb-3 uppercase">Sở thích</h2>
+                    <div class="flex gap-3 flex-wrap">
+                        <span class="tag">Code</span>
+                        <span class="tag">Lọ</span>
+                        <span class="tag">Game</span>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="pixel-card">
+                        <h2 class="exe-title mb-4 uppercase text-blue-600">Yêu Thích</h2>
+                        <div class="space-y-4">
+                            <div><div class="flex justify-between text-xs font-bold uppercase"><span>Roblox</span><span>99%</span></div><div class="skill-bar"><div class="skill-fill" style="width:99%"></div></div></div>
+                            <div><div class="flex justify-between text-xs font-bold uppercase"><span>VS Code</span><span>85%</span></div><div class="skill-bar"><div class="skill-fill" style="width:85%"></div></div></div>
+                        </div>
+                    </div>
+                    <div class="pixel-card">
+                        <h2 class="exe-title mb-4 uppercase text-green-600">Kỹ năng</h2>
+                        <div class="space-y-4">
+                            <div><div class="flex justify-between text-xs font-bold uppercase"><span>HTML/CSS</span><span>70%</span></div><div class="skill-bar"><div class="skill-fill" style="width:70%"></div></div></div>
+                            <div><div class="flex justify-between text-xs font-bold uppercase"><span>JS</span><span>36%</span></div><div class="skill-bar"><div class="skill-fill" style="width:36%"></div></div></div>
+                            <div><div class="flex justify-between text-xs font-bold uppercase"><span>Design</span><span>17%</span></div><div class="skill-bar"><div class="skill-fill" style="width:17%"></div></div></div>
+                            <div><div class="flex justify-between text-xs font-bold uppercase"><span>Game Dev</span><span class="text-red-600">-999%</span></div><div class="skill-bar"><div class="skill-fill negative-fill"></div></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function updateClock() { document.getElementById("clock").textContent = new Date().toLocaleTimeString("vi-VN"); }
+        setInterval(updateClock, 1000); updateClock();
+        const audio = document.getElementById("bgm");
+        let played = false;
+        function playMusic() { if (!played) { audio.play().then(() => played = true).catch(() => {}); } }
+        ["click", "touchstart", "scroll"].forEach(ev => document.addEventListener(ev, playMusic, { passive: true }));
+    </script>
+</body>
+</html>
